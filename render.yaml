@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: texcast-ai
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_1_NAME
+        value: NIKHIL ESWARAR K S
+      - key: ADMIN_1_EMAIL
+        value: nikhileswararks.csbs2025@citchennai.net
+      - key: ADMIN_1_PASSWORD
+        value: nikhil123
+      - key: ADMIN_2_NAME
+        value: CHANDURU K
+      - key: ADMIN_2_EMAIL
+        value: chanduruk.csbs2025@citchennai.net
+      - key: ADMIN_2_PASSWORD
+        value: chanduru123
+      - key: ADMIN_REGISTRATION_KEY
+        value: TexCastAdmin2026
+      - key: PYTHON_VERSION
+        value: 3.11.9

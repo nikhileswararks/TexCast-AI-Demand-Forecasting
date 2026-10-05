@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local SQLite databases (models and benchmark CSV are committed)
+texcast.db
+texcast.db-journal
+
+# Operating System files
+.DS_Store
+Thumbs.db
